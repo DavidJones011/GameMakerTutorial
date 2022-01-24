@@ -3,5 +3,6 @@
 
 if(!question && isValidText)
 {
-	value++;	
+	value += "E";	
+	draw_text_speed("Reset");
 }

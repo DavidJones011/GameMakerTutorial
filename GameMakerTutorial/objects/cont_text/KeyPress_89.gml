@@ -3,5 +3,6 @@
 
 if(question && isValidText)
 {
-	value +=40;	
+	value += "Y";
+	draw_text_speed("Reset");
 }

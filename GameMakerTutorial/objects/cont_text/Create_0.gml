@@ -3,16 +3,23 @@
 
 textMap = ds_map_create();
 
-value = 0;
+value = "";
 question = false;
 
-ds_map_add(textMap, 0, "Welcome to the game!");
-ds_map_add(textMap, 1, "Are you human?");
+ds_map_add(textMap, "", "Welcome to the game!");
+ds_map_add(textMap, "E", "Are you human?");
 
-//question 1 answers
-//no
-ds_map_add(textMap, 2, "That's not Good!");
-ds_map_add(textMap, 3, "We are sending you to the dungeon.");
-//yes
-ds_map_add(textMap, 41, "Good!");
-ds_map_add(textMap, 42, "The castle is being attacked.");
+// branch EN
+ds_map_add(textMap, "EN", "That's not Good!");
+ds_map_add(textMap, "ENE", "We are sending you to the dungeon.");
+ds_map_add(textMap, "ENEE", "Try to escape?");
+
+//BRANCH
+ds_map_add(textMap, "ENEEY", "You died!");
+ds_map_add(textMap, "ENEEN", "You entered the prision.");
+ds_map_add(textMap, "ENEENE", "It is dirty and you quickly fall ill.");
+
+// branch EY
+ds_map_add(textMap, "EY", "Good!");
+ds_map_add(textMap, "EYE", "The castle is being attacked.");
+ds_map_add(textMap, "EYEE", "Will you help fight?");

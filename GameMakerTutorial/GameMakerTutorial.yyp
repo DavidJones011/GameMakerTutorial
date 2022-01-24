@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "b034c61d-ef7d-4e13-87b3-5387801b19b5",
+            "Value": {
+                "id": "7c5cd9d1-da67-4c45-aa5e-1eee5676ff38",
+                "resourcePath": "scripts\\draw_text_speed\\draw_text_speed.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ba50fcea-e15d-4ceb-beab-8c36a11b2d1f",
             "Value": {
                 "id": "d314090d-00de-4d17-8abe-6b8ab9f66f21",
@@ -192,7 +200,7 @@
         }
     ],
     "script_order": [
-        
+        "b034c61d-ef7d-4e13-87b3-5387801b19b5"
     ],
     "tutorial": ""
 }

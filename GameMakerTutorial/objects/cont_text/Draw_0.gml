@@ -13,7 +13,7 @@ question = isValidText && string_char_at(txt, string_length(txt)) == "?";
 
 //draw question or statement
 if(isValidText)
-	draw_text(x,y,string(txt));
+	draw_text_speed(x,y,string(txt), 0.05 * room_speed);
 
 //draw options
 draw_set_color(c_red);
