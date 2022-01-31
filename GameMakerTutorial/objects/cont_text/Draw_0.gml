@@ -7,13 +7,15 @@ draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 
-txt = ds_map_find_value(textMap, value);
+txt = ds_map_find_value(textMap, global.value);
 isValidText = !is_undefined(txt)
 question = isValidText && string_char_at(txt, string_length(txt)) == "?";
 
 //draw question or statement
 if(isValidText)
+{
 	draw_text_speed(x,y,string(txt), 0.05 * room_speed);
+}
 
 //draw options
 draw_set_color(c_red);

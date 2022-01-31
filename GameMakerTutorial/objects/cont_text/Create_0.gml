@@ -3,8 +3,10 @@
 
 textMap = ds_map_create();
 
-value = "";
+global.value = "";
 question = false;
+prev_time = 0;
+txt = "";
 
 ds_map_add(textMap, "", "Welcome to the game!");
 ds_map_add(textMap, "E", "Are you human?");
@@ -16,7 +18,7 @@ ds_map_add(textMap, "ENEE", "Try to escape?");
 
 //BRANCH
 ds_map_add(textMap, "ENEEY", "You died!");
-ds_map_add(textMap, "ENEEN", "You entered the prision.");
+ds_map_add(textMap, "ENEEN", "You entered the prison.");
 ds_map_add(textMap, "ENEENE", "It is dirty and you quickly fall ill.");
 
 // branch EY
